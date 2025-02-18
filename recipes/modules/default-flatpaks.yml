@@ -1,27 +1,8 @@
-type: default-flatpaks
-notify: true
-system:
-  install:
-    # Gnome Stuff
-    - page.tesk.Refine
-    - org.gnome.baobab
-    - org.gnome.Boxes
-    - org.gnome.Calculator
-    - org.gnome.Calendar
-    - org.gnome.clocks
-    - org.gnome.Evince
-    - org.gnome.Loupe
-    - org.gnome.Music
-    - org.gnome.Papers
-    - org.gnome.SimpleScan
-    - org.gnome.Weather
-
-    # Essentials
-    - com.github.tchx84.Flatseal
-    - com.mattjakeman.ExtensionManager
-    - io.github.celluloid_player.Celluloid
-    - io.github.flattool.Warehouse
-    - org.mozilla.firefox
-  remove:
-    - org.gnome.eog
-user: {}
+  type: default-flatpaks
+  notify: true
+  system:
+    install:
+      - com.github.tchx84.Flatseal
+      - io.github.flattool.Warehouse
+      - org.mozilla.firefox
+  user: {}

@@ -1,0 +1,21 @@
+type: default-flatpaks
+notify: true
+system:
+  install:
+    - page.tesk.Refine
+    - org.gnome.baobab
+    - org.gnome.Boxes
+    - org.gnome.Calculator
+    - org.gnome.Calendar
+    - org.gnome.clocks
+    - org.gnome.Evince
+    - org.gnome.Loupe
+    - org.gnome.Music
+    - org.gnome.Papers
+    - org.gnome.SimpleScan
+    - org.gnome.Weather
+    - com.mattjakeman.ExtensionManager
+    - io.github.celluloid_player.Celluloid
+  remove:
+    - org.gnome.eog
+user: {}
