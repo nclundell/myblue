@@ -17,45 +17,9 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-    install:
-      - micro
-      - starship
-    remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      - firefox
-      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-
-  - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default
-      install:
-        # Gnome Stuff
-        - org.gnome.baobab
-        - org.gnome.Boxes
-        - org.gnome.Calculator
-        - org.gnome.Calendar
-        - org.gnome.clocks
-        - org.gnome.Evince
-        - org.gnome.Loupe
-        - org.gnome.Music
-        - org.gnome.Papers
-        - org.gnome.SimpleScan
-        - org.gnome.Weather
-
-        # Essentials
-        - com.github.tchx84.Flatseal
-        - com.mattjakeman.ExtensionManager
-        - io.github.celluloid_player.Celluloid
-        - io.github.flattool.Warehouse
-        - org.mozilla.firefox
-      remove:
-        - org.gnome.eog
-    user: {} # Also add Flathub user repo, but no user packages
-
+  - from-file: modules/default-flatpaks.yml
+  - from-file: modules/fonts.yml
+  - from-file: modules/gnome-extensions.yml
+  - from-file: modules/rpm-ostree.yml
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
