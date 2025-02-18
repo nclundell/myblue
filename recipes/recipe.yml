@@ -7,9 +7,9 @@ base-image: ghcr.io/ublue-os/sericea-main
 image-version: latest
 
 modules:
-  - from-file: default-rpms.yml
-  - from-file: default-flatpaks.yml
-  - from-file: ghostty.yml
+  - from-file: modules/default-rpms.yml
+  - from-file: modules/default-flatpaks.yml
+  - from-file: modules/ghostty.yml
     
   - type: files
     files:
