@@ -5,8 +5,8 @@ repos:
 install:
   - azote
   - nwg-displays
-  - ngw-drawer
-  - ngw-look
-  - mgw-menu
-  - ngw-panel
+  - nwg-drawer
+  - nwg-look
+  - nwg-menu
+  - nwg-panel
   - SwayNotificationCenter
