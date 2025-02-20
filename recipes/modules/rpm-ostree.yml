@@ -1,8 +1,0 @@
-type: rpm-ostree
-install:
-  - papirus-icon-theme
-  - yaru-icon-theme
-
-remove:
-  - firefox
-  - firefox-langpacks

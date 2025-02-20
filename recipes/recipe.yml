@@ -3,15 +3,17 @@
 # image will be published to ghcr.io/<user>/<name>
 name: myblue
 description: This is my personal OS image.
-base-image: ghcr.io/ublue-os/sericea-main
+base-image: ghcr.io/ublue-os/silverblue-main
 image-version: latest
 
 modules:
   - from-file: modules/default-rpms.yml
   - from-file: modules/default-flatpaks.yml
+  - from-file: modules/gnome-extensions.yml
+  - from-file: modules/gnome-flatpaks.yml
   - from-file: modules/nerd-fonts.yml
   - from-file: modules/ghostty.yml
-  - from-file: modules/wm-rpms.yml
+  - from-file: modules/sway-rpms.yml
     
   - type: files
     files:

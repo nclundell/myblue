@@ -9,4 +9,9 @@ install:
   # - nwg-look
   # - nwg-menu
   # - nwg-panel
+  - network-manager-applet
+  - sway
+  - sway-contrib
   - SwayNotificationCenter
+  - udiskie
+  - waybar

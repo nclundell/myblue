@@ -4,6 +4,7 @@ install:
   - git-delta
   - stow
   - papirus-icon-theme
+  - papirus-icon-theme-dark
   - yaru-icon-theme
 remove:
   - firefox
