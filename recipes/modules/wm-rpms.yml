@@ -3,10 +3,10 @@ type: rpm-ostree
 repos:
   - https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-%OS_VERSION%/tofik-nwg-shell-fedora-%OS_VERSION%.repo
 install:
-  - azote
-  - nwg-displays
-  - nwg-drawer
-  - nwg-look
-  - nwg-menu
-  - nwg-panel
+  # - azote
+  # - nwg-displays
+  # - nwg-drawer
+  # - nwg-look
+  # - nwg-menu
+  # - nwg-panel
   - SwayNotificationCenter
