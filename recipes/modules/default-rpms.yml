@@ -9,4 +9,3 @@ install:
 remove:
   - firefox
   - firefox-langpacks
-  - foot
