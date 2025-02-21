@@ -9,6 +9,7 @@ image-version: latest
 modules:
   - from-file: modules/default-rpms.yml
   - from-file: modules/default-flatpaks.yml
+  - from-file: modules/gaming-flatpaks.yml
   - from-file: modules/gnome-extensions.yml
   - from-file: modules/gnome-flatpaks.yml
   - from-file: modules/nerd-fonts.yml

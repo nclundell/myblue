@@ -1,0 +1,15 @@
+  type: default-flatpaks
+  notify: true
+  system:
+    install:
+      - io.github.Foldex.AdwSteamGtk
+      - org.hedgewars.Hedgewars
+      - com.vysp3r.ProtonPlus
+      - com.github.k4zmu2a.spacecadetpinball
+  user:
+    install:
+      - com.usebottles.bottles
+      - net.lutris.Lutris
+      - com.valvesoftware.Steam
+      - com.valvesoftware.Steam.Utility.steamtinkerlaunch
+
