@@ -6,7 +6,7 @@
       - com.vysp3r.ProtonPlus
       - com.github.k4zmu2a.spacecadetpinball
       - org.freedesktop.Platform.VulkanLayer.gamescope
-      - org.freedesktop.Platform.VulkanLayer.MangoHud//24.08
+      - org.freedesktop.Platform.VulkanLayer.MangoHud
   user:
     install:
       - com.usebottles.bottles
