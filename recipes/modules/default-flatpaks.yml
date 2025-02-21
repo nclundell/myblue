@@ -2,7 +2,11 @@
   notify: true
   system:
     install:
+      - io.github.dvlv.boxbuddyrs
+      - org.fedoraproject.MediaWriter
       - com.github.tchx84.Flatseal
       - io.github.flattool.Warehouse
       - org.mozilla.firefox
-  user: {}
+  user:
+    install:
+      - io.github.zaedus.spider
