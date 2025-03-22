@@ -1,5 +1,21 @@
 type: rpm-ostree
 install:
+  # Build Deps
+  - autoconf
+  - bzip2
+  - gcc
+  - make
+  - patch
+  - rust
+  - gdbm-devel
+  - libffi-devel
+  - libyaml-devel
+  - ncurses-devel
+  - openssl-devel
+  - perl-FindBin
+  - readline-devel
+  - zlib-devel
+  # Extras
   - git
   - git-delta
   - stow
