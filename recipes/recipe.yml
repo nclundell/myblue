@@ -14,7 +14,6 @@ modules:
   - from-file: modules/gnome-flatpaks.yml
   - from-file: modules/nerd-fonts.yml
   - from-file: modules/ghostty.yml
-  - from-file: modules/sway-rpms.yml
     
   - type: files
     files:
