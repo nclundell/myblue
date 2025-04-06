@@ -8,7 +8,7 @@ image-version: latest
 modules:
   - from-file: modules/default_flatpaks.yml
   - from-file: modules/default_rpms.yml
-  - from-file: modules/gnome_extentions.yml
+  - from-file: modules/gnome_extensions.yml
   - from-file: modules/gnome_flatpaks.yml
   - from-file: modules/gnome_rpms.yml
   - from-file: modules/ghostty.yml
