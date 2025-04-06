@@ -1,4 +1,3 @@
----
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
 name: myblue
@@ -7,19 +6,14 @@ base-image: ghcr.io/ublue-os/silverblue-main
 image-version: latest
 
 modules:
-  - from-file: modules/default-rpms.yml
-  - from-file: modules/default-flatpaks.yml
-  - from-file: modules/gaming-flatpaks.yml
-  - from-file: modules/gnome-extensions.yml
-  - from-file: modules/gnome-flatpaks.yml
-  - from-file: modules/nerd-fonts.yml
+  - from-file: modules/default.yml
+  - from-file: modules/gnome.yml
   - from-file: modules/ghostty.yml
+  - from-file: modules/sway.yml
     
   - type: files
     files:
       - source: system
         destination: /
-
-  - type: brew
 
   - type: signing

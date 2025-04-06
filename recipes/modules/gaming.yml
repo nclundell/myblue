@@ -1,0 +1,17 @@
+- type: default-flatpaks
+  notify: true
+  system:
+    install:
+      - com.usebottles.bottles
+      - com.vysp3r.ProtonPlus
+      - com.github.k4zmu2a.spacecadetpinball
+      - net.lutris.Lutris
+  user: {}
+
+- type: rpm-ostree
+  install:
+    # Steam
+    - gamemode
+    - gamescope
+    - mangohud
+    - steam
